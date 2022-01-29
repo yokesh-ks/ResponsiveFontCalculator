@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Font Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+        <div class="header-container">
+            <p>Responsive Font Calculator</p>
+        </div>
+
+    </div>
+    <div class="container">
+      <h1>
+        Responsive Font Size Calculator for Contents between <br>Desktop layout Size : 1200px <br> Mobile layout Size :
+        325px
+      </h1>
+      <form>
+        <div>
+          <label>DeskTop Size</label>
+          <input
+            type="number"
+            id="webSize"
+            value=""
+            placeholder="Enter web size"
+          />
+        </div>
+        <div>
+          <label>Mobile Size</label>
+          <input
+            type="number"
+            id="mobileSize"
+            value=""
+            placeholder="Enter mobile size"
+          />
+        </div>
+
+        <input
+          class="button"
+          type="button"
+          value="submit"
+          onclick="myFunction()"
+        />
+      </form>
+      <div class="displayContainer">
+        <input type="text" id="display" value="" />
+        <div class="tooltip">
+          <button onclick="copyText()" onmouseout="outFunc()" class="buttonCopy">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            Copy text
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
