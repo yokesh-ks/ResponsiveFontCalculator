@@ -9,24 +9,27 @@
   </head>
   <body>
     <div class="ticker-wrapper-h">
-      <div class="heading">Advanced Font Calculator</div>
+      <div class="heading bg-linear text-white fw-600">
+        Advanced Font Calculator
+      </div>
 
       <ul class="news-ticker-h">
         <li>
           <a
             href="https://yokesh-mytools.vercel.app/responsive-font"
             target="_blank"
+            class="fw-300"
           >
-            >For an advanced responsive font calculator, Click on "Advance" in
-            the header. You will be able to edit the Desktop Layout and Mobile
-            Layout.</a
+            >For an advanced responsive font calculator, Click on "Advance Font
+            Calculator" in the header. You will be able to edit the Desktop
+            Layout and Mobile Layout.</a
           >
         </li>
       </ul>
     </div>
-    <div class="header">
+    <header class="header">
       <div class="header-container">
-        <p>Responsive Font Calculator</p>
+        <p class="text-pink fw-500">Responsive Font Calculator</p>
         <div class="menu-item">
           <a
             href="https://yokesh-mytools.vercel.app/responsive-font"
@@ -37,17 +40,19 @@
           <a href="http://yokesh.in/" target="_blank"> My Portfolio </a>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="container">
-      <h1>
+    <main class="container">
+      <div class="top-gradient"></div>
+      <div class="white-gradient"></div>
+      <h1 class="text-white fw-300">
         Responsive Font Size Calculator for Contents between <br />Desktop
         layout Size : 1200px <br />
         Mobile layout Size : 325px
       </h1>
       <form>
         <div>
-          <label>DeskTop Size</label>
+          <label class="text-pink fw-600">DeskTop Size</label>
           <input
             type="number"
             id="webSize"
@@ -56,7 +61,7 @@
           />
         </div>
         <div>
-          <label>Mobile Size</label>
+          <label class="text-pink fw-600">Mobile Size</label>
           <input
             type="number"
             id="mobileSize"
@@ -66,7 +71,7 @@
         </div>
 
         <input
-          class="button"
+          class="button bg-linear"
           type="button"
           value="submit"
           onclick="myFunction()"
@@ -78,14 +83,16 @@
           <button
             onclick="copyText()"
             onmouseout="outFunc()"
-            class="buttonCopy"
+            class="buttonCopy bg-linear"
           >
             <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
             Copy text
           </button>
         </div>
       </div>
-    </div>
+    </main>
+
+    <footer class="footer">Made with <span>&hearts;</span> by Yokesh</footer>
 
     <script src="main.js"></script>
   </body>
