@@ -8,16 +8,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">
-        <div class="header-container">
-            <p>Responsive Font Calculator</p>
-        </div>
+    <div class="ticker-wrapper-h">
+      <div class="heading">Advanced Font Calculator</div>
 
+      <ul class="news-ticker-h">
+        <li>
+          <a
+            href="https://yokesh-mytools.vercel.app/responsive-font"
+            target="_blank"
+          >
+            >For an advanced responsive font calculator, Click on "Advance" in
+            the header. You will be able to edit the Desktop Layout and Mobile
+            Layout.</a
+          >
+        </li>
+      </ul>
     </div>
+    <div class="header">
+      <div class="header-container">
+        <p>Responsive Font Calculator</p>
+        <div class="menu-item">
+          <a
+            href="https://yokesh-mytools.vercel.app/responsive-font"
+            target="_blank"
+          >
+            Advance Font Calculator
+          </a>
+          <a href="http://yokesh.in/" target="_blank"> My Portfolio </a>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <h1>
-        Responsive Font Size Calculator for Contents between <br>Desktop layout Size : 1200px <br> Mobile layout Size :
-        325px
+        Responsive Font Size Calculator for Contents between <br />Desktop
+        layout Size : 1200px <br />
+        Mobile layout Size : 325px
       </h1>
       <form>
         <div>
@@ -49,13 +75,16 @@
       <div class="displayContainer">
         <input type="text" id="display" value="" />
         <div class="tooltip">
-          <button onclick="copyText()" onmouseout="outFunc()" class="buttonCopy">
+          <button
+            onclick="copyText()"
+            onmouseout="outFunc()"
+            class="buttonCopy"
+          >
             <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
             Copy text
           </button>
         </div>
       </div>
-      
     </div>
 
     <script src="main.js"></script>
